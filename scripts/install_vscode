@@ -1,0 +1,8 @@
+#!/bin/bash
+
+PACKAGE_NAME=code_1.41.1-1576681836_amd64
+PACKAGE_URL=https://az764295.vo.msecnd.net/stable/26076a4de974ead31f97692a0d32f90d735645c0/$PACKAGE_NAME.deb
+
+wget $PACKAGE_URL
+sudo dpkg --install $PACKAGE_NAME.deb
+rm $PACKAGE_NAME.deb
