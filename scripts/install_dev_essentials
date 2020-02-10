@@ -1,4 +1,4 @@
 #!/bin/bash
 
 sudo apt-get update -y
-sudo apt-get install -y build-essentials cmake python3
+sudo apt-get install -y build-essentials cmake python3 net-tools
