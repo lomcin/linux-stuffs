@@ -7,7 +7,7 @@ Remember that script you've always wanted to help you getting started with somet
 - [Developer Essentials](#developer-essentials)
 - [Docker](#docker)
 - [Nvidia](#nvidia)
-- [Visual Studio Code](#text-editors)
+- [Visual Studio Code](#visual-studio-code)
 - [General Stuff](#general-stuff)
 
 # I'm not a developer
