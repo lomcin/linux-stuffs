@@ -1,7 +1,2 @@
 #!/bin/bash
-
-while [ 1 == 1 ]
-do
-	nvidia-smi
-	sleep 1s
-done
+watch -n 0.5 nvidia-smi
