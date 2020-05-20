@@ -1,0 +1,14 @@
+#!/bin/bash
+DEFAULT_VALUE=2
+TIMEOUT=0
+
+if [ -z $1 ]
+then
+	echo "You should define the time in hours before trying to run. Using default value '$DEFAULT_VALUE'. Ex. $ ./git_auth_cache 2"
+	TIMEOUT = $DEFAULT_VALUE * 3600
+else
+	TIMEOUT = $1 * 3600
+	echo "Using $1 hours. $TIMEOUT in seconds."
+fi
+
+git config --global credential.helper "cache --timeout {$TIMEOUT}"
