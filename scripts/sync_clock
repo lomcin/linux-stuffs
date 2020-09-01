@@ -1,0 +1,15 @@
+#!/bin/bash
+
+sudo chronyd -Q
+if [ $? -eq 0 ]; then
+    echo "Done."
+else
+    echo "Ops, installing chrony."
+    sudo apt install chrony
+    if [ $? -eq 0 ]; then
+        sudo chronyd -Q
+        echo "Done."
+    else
+        echo "FAILED TO SYNCHRONIZE CLOCK"
+    fi
+fi
