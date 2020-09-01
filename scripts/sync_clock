@@ -5,7 +5,7 @@ if [ $? -eq 0 ]; then
     echo "Done."
 else
     echo "Ops, installing chrony."
-    sudo apt install chrony
+    sudo apt install -y chrony
     if [ $? -eq 0 ]; then
         sudo chronyd -Q
         echo "Done."
