@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo apt remove -y unity-control-center && sudo apt autoremove -y && sudo apt install -y unity-control-center
+
+
+sudo apt remove -y gnome-control-center && sudo apt autoremove -y && sudo apt install -y gnome-control-center
+
