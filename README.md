@@ -5,6 +5,7 @@ Remember that script you've always wanted to help you getting started with somet
 - [I'm not a developer](#im-not-a-developer)
 # I'm a developer
 - [Developer Essentials](#developer-essentials)
+- [Crypto](#crypto)
 - [Docker](#docker)
 - [Nvidia](#nvidia)
 - [Visual Studio Code](#visual-studio-code)
@@ -34,6 +35,14 @@ This script installs build-essentials, cmake, python3, net-tools (ifconfig), and
 ./scripts/install_dev_essentials
 ```
 
+## Crypto
+[Top /\ ](#linux-stuffs)
+### Create self-signed certificate
+Go to ```crypto/selfsigning/``` folder. Modify the **san.cnf** file at your will. And run the following command.
+```bash
+./generate_selfsigned_certificate.sh
+```
+If you do not change any variable, then your private key will be in **my_key.key**, your certificate signing request file will be **my_csr.csr**, and your self-signed certificate will be in **my_cert_crt**.
 ## Docker
 [Top /\ ](#linux-stuffs)
 ### Install Docker
