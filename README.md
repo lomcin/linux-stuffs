@@ -32,7 +32,7 @@ This is usually useful when using a machine that already/also have Windows insta
 ### Install Developer Essentials
 This script installs build-essentials, cmake, python3, net-tools (ifconfig), and possible more useful stuffs for developers.
 ```bash
-./scripts/install_dev_essentials
+./install/dev_essentials
 ```
 
 ## Crypto
@@ -48,7 +48,7 @@ If you do not change any variable, then your private key will be in **my_key.key
 ### Install Docker
 Simple and direct. May need to reboot the machine.
 ```bash
-./scripts/install_docker
+./install/docker
 ```
 To reboot the machine (**please be sure you've saved all your work before this**):
 ```bash
@@ -66,17 +66,17 @@ reboot
 [Top /\ ](#linux-stuffs)
 ### Install Nvidia Drivers
 ```bash
-./scripts/install_nvidia_drivers
+./install/nvidia/drivers
 ```
 
 ### Install Nvidia Container Toolkit
 ```bash
-./scripts/install_nvidia_container_toolkit
+./install/nvidia/container_toolkit
 ```
 
 ## Visual Studio Code
 [Top /\ ](#linux-stuffs)
 ### Install Visual Studio Code
 ```bash
-./scripts/install_vscode
+./install/vscode
 ```
