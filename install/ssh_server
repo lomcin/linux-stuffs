@@ -1,0 +1,15 @@
+#!/bin/bash
+# As seen in https://devconnected.com/how-to-install-and-enable-ssh-server-on-ubuntu-20-04/
+
+sudo apt-get update
+sudo apt-get install openssh-server
+sudo systemctl status sshd
+sudo ufw allow ssh
+
+# Just checking if the Ubuntu Firewall is already configured for SSH
+sudo ufw status
+
+# Just checking if the SSH service is already running
+sudo systemctl list-unit-files | grep enabled | grep ssh
+
+sudo systemctl enable ssh
